@@ -12,7 +12,7 @@
 and faster.** No fork, no vendored parser: every line was written for this
 bounty and measured empirically against marked's own output.
 
-| | |
+| Metric | Value |
 | --- | --- |
 | **Correctness** | **720/720** practice cases, byte-identical to marked 18.1.3 |
 | **Speed** | **~1.76× faster** than marked (median, 5 rounds, same corpus) |
@@ -78,7 +78,7 @@ it if you are building your own block layer on top of this inline engine.
 Measured on the 720-case practice corpus, 5 rounds, median of the round
 totals, same machine and same corpus for both renderers:
 
-| Renderer | Median (5 rounds) | |
+| Renderer | Median (5 rounds) | Result |
 | --- | --- | --- |
 | `marked` 18.1.3 | 1,083 ms | baseline |
 | **Silowek Mark** | **616 ms** | **~1.76× faster** |
